@@ -5,6 +5,7 @@ export default function articleId({ article }){
         <main>
             <h1>{article.title}</h1>
             <p>{article.publishedAt}</p>
+            <p>{article.category && `${article.category.name}`}</p>
             <div
                 dangerouslySetInnerHTML={{
                 __html: `${article.text}`,
