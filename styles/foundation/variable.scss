@@ -1,0 +1,74 @@
+// --- Colors ---
+$baseColor: #FDFDFD;
+$keyColor: #107C41;
+$mvColor: #3AA364;
+$bgFooterColor: #333333;
+$pointColor: #FFBE0B;
+
+// --- Font Colors ---
+$baseFontColor: #333;
+$linkFontColor: #004BB1;
+// --- bg ---
+
+// button
+$tabButtonCurrentColor: #4FBE81;
+$productButtonColor-kindle: #3AA364;
+$productButtonColor-amazon: #F59B0B;
+$productButtonColor-rakuten: #EF4444;
+$snsButtonColor-tw: #74C1F8;
+$snsButtonColor-fb: #668AD8;
+$snsButtonColor-pocket: #F87474;
+
+
+// function
+$functionBorderColor: #F7CF6A;
+$functionBackgroundColor: #FFF9DF;
+
+// toolchip
+$tooltipBackgroundColor: #333333;
+
+// flow
+$flowHeadingColor: #43A269;
+$flowBackgroudColor: #4FBE81;
+$flowNumberColor: #F59E0B;
+
+// shadow
+$shadowColor: rgba(0, 0, 0, 0.16);
+$hoverShadowColor: rgba(0, 0, 0, 0.08);
+$focusShadowColor: rgba(58, 163, 100, 0.25) 0px 0px 0px 2px;
+
+// --- nonColoredColorGray ---
+$nonColoredColorGray-50: #f9f9f9;
+$nonColoredColorGray-100: #F5F5F5;
+$nonColoredColorGray-150: #EEEEEE;
+$nonColoredColorGray-200: #CCCCCC;
+
+
+// font
+$Montserrat: 'Montserrat', sans-serif;;
+
+
+
+// --- Break Point ---
+$breakpoint-up: (
+  'xs': 'screen and (min-width: 599px)',
+  'sm': 'screen and (min-width: 769px)',
+  'md': 'screen and (min-width: 1025px)',
+  'lg': 'screen and (min-width: 1100px)',
+  'xl': 'screen and (min-width: 1400px)',
+) !default;
+
+$breakpoint-down: (
+  'xs': 'screen and (max-width: 600px)',
+  'sm': 'screen and (max-width: 768px)',
+  'md': 'screen and (max-width: 1024px)',
+  'lg': 'screen and (max-width: 1099px)',
+  'xl': 'screen and (max-width: 1399px)',
+) !default;
+
+$breakpoint-between: (
+  'sm-md': 'screen and (min-width: 769px) and (max-width: 1024px)',
+  'sm-xl': 'screen and (min-width: 769px) and (max-width: 1099px)',
+  'md-lg': 'screen and (min-width: 960px) and (max-width: 1024px)',
+  'md-xl': 'screen and (min-width: 960px) and (max-width: 1399px)',
+) !default;

@@ -1,0 +1,27 @@
+.c-heading-primary{
+    border-bottom: 3px solid $keyColor;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    @include mq-up(){
+        font-size: 2.8rem;
+        padding: 12px 10px;
+    }
+    @include mq-down(){
+        font-size: 2.4rem;
+        padding: 8px 10px;
+    }
+}
+
+.c-heading-secondary{
+    position: relative;
+    background-color: $nonColoredColorGray-150;
+    margin-bottom: 20px;
+    @include mq-up(){
+        font-size: 1.8rem;
+        padding: 12px 15px;
+    }
+    @include mq-down(){
+        font-size: 1.6rem;
+        padding: 8px 15px;
+    }
+}

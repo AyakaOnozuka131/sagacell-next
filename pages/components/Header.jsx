@@ -1,13 +1,12 @@
 import Link from 'next/link';
+import Layout from '../../styles/layout/layout.module.scss'
 
 export default function Header() {
     return (
-        <header>
-            <h1>ねくすと・じぇいえす事始め!</h1>
-            <menu>Menu：
-                <Link href="/"><a>トップ</a></Link>｜
-                <Link href="/other"><a>別ページ</a></Link>
-            </menu>
-        </header>
+        <>
+            <div className={Layout['l-header']}>
+                test
+            </div>
+        </>
     );
 };
