@@ -5,12 +5,22 @@
 @import '../foundation/variable';
 
 // ============================================
-// - layout
+// - component
 // ============================================
 @import '_article';
-@import '_content';
+@import '_breadcrumb';
+@import '_footer';
+@import '_form';
+@import '_function';
+@import '_global-nav';
+@import '_ham-button';
+@import '_hamburger';
 @import '_header';
-@import '_index';
-@import '_main';
-@import '_page';
+@import '_heading';
+@import '_img';
+@import '_mv';
+@import '_overlay';
+@import '_page-mv';
+@import '_pagination';
 @import '_product';
+@import '_text';
