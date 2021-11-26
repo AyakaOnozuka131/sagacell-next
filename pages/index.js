@@ -1,12 +1,9 @@
 import Link from 'next/link';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import { client } from '../libs/client';
 
 export default function Home ({ article }){
     return(
-        <div>
-            <Header />
+        <>
             <ul>
                 {article.map((article) => (
                     <li key={article.id}>
@@ -16,8 +13,7 @@ export default function Home ({ article }){
                     </li>
                 ))}
             </ul>
-            <Footer />
-        </div>
+        </>
     );
 }
 
