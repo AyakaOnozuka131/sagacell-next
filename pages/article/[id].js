@@ -4,6 +4,7 @@ import ComponentClassName from '../../styles/component/component.module.scss';
 import ProjectClassName from '../../styles/project/project.module.scss';
 import UtilityClassName from '../../styles/utility/utility.module.scss';
 import ArticleMainVisual from '../components/ArticleMainVisual';
+import Breadcrumb from '../components/Breadcrumb';
 import { client } from "../../libs/client";
 
 // 関数コンポーネントのpropsを分割代入で指定
@@ -15,11 +16,15 @@ export default function articleId({ article }){
                 title={ article.title }
                 category={ article.category }
             />
-            <div
-                dangerouslySetInnerHTML={{
-                __html: `${article.text}`,
-                }}
-            />
+            <div className={LayoutClassName['l-content']}>
+                <div className={LayoutClassName['l-page']}>
+                    <Breadcrumb 
+                        title={ article.title }
+                        category={ article.category }
+                    />
+
+                </div>
+            </div>
         </>
     );
 }
