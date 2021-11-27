@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 import LayoutClassName from '../../styles/layout/layout.module.scss';
 import ComponentClassName from '../../styles/component/component.module.scss';
 import UtilityClassName from '../../styles/utility/utility.module.scss';
