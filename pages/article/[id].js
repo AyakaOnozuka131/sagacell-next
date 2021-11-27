@@ -1,17 +1,26 @@
+import Link from 'next/link';
+import LayoutClassName from '../../styles/layout/layout.module.scss';
+import ComponentClassName from '../../styles/component/component.module.scss';
+import ProjectClassName from '../../styles/project/project.module.scss';
+import UtilityClassName from '../../styles/utility/utility.module.scss';
+import ArticleMainVisual from '../components/ArticleMainVisual';
 import { client } from "../../libs/client";
 
+// 関数コンポーネントのpropsを分割代入で指定
 export default function articleId({ article }){
     return (
-        <main>
-            <h1>{article.title}</h1>
-            <p>{article.publishedAt}</p>
-            <p>{article.category && `${article.category.name}`}</p>
+        <>
+            <ArticleMainVisual 
+                publishedAt={ article.publishedAt }
+                title={ article.title }
+                category={ article.category }
+            />
             <div
                 dangerouslySetInnerHTML={{
                 __html: `${article.text}`,
                 }}
             />
-        </main>
+        </>
     );
 }
 
