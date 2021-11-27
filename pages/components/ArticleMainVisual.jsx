@@ -3,7 +3,7 @@ import ComponentClassName from '../../styles/component/component.module.scss';
 import UtilityClassName from '../../styles/utility/utility.module.scss';
 
 export default function articleMainVisual(　props　) {
-    // propsを分割
+    // propsを分割代入
     const { publishedAt, title, category } = props;
     return (
         <div className={ComponentClassName['c-page-mv']}>
