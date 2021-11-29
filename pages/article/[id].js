@@ -5,6 +5,7 @@ import ProjectClassName from '../../styles/project/project.module.scss';
 import UtilityClassName from '../../styles/utility/utility.module.scss';
 import ArticleMainVisual from '../components/ArticleMainVisual';
 import Breadcrumb from '../components/Breadcrumb';
+import Lead from '../components/Lead';
 import { client } from "../../libs/client";
 
 // 関数コンポーネントのpropsを分割代入で指定
@@ -22,7 +23,10 @@ export default function articleId({ article }){
                         title={ article.title }
                         category={ article.category }
                     />
-
+                    <Lead 
+                        text={ article.text }
+                        showFunction={ article.showFunction }
+                    />
                 </div>
             </div>
         </>
