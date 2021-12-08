@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import ComponentClassName from '../../styles/component/component.module.scss';
+import ProjectClassName from '../../styles/project/project.module.scss';
 import UtilityClassName from '../../styles/utility/utility.module.scss';
 
 export default function Lead( props ) {
-    const { text, showFunction } = props;
+    const { title, text, showFunction } = props;
     return (
-        <div className={ComponentClassName['p-component']}>
-            <h2 className={ComponentClassName['c-heading-primary']}>タイトル</h2>
+        <div className={ProjectClassName['p-component']}>
+            <h2 className={ComponentClassName['c-heading-primary']}>
+                { title }
+            </h2>
             <div className={ComponentClassName['c-text']}
                 dangerouslySetInnerHTML={{
                     __html: `${text}`,
