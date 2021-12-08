@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import LayoutClassName from '../../styles/layout/layout.module.scss';
-import ComponentClassName from '../../styles/component/component.module.scss';
-import ProjectClassName from '../../styles/project/project.module.scss';
-import UtilityClassName from '../../styles/utility/utility.module.scss';
 import ArticleMainVisual from '../components/ArticleMainVisual';
 import Breadcrumb from '../components/Breadcrumb';
 import Lead from '../components/Lead';
+import Example from '../components/Example';
 import { client } from "../../libs/client";
 
 // 関数コンポーネントのpropsを分割代入で指定
@@ -24,8 +22,16 @@ export default function articleId({ article }){
                         category={ article.category }
                     />
                     <Lead 
+                        title={ article.title }
                         text={ article.text }
                         showFunction={ article.showFunction }
+                    />
+                    <Example 
+                        heading={article.heading}
+                        srcPath={article.image.url}
+                        alt={article.image.alt}
+                        width={article.image.width}
+                        height={article.image.height}
                     />
                 </div>
             </div>
