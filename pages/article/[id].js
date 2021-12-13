@@ -4,6 +4,7 @@ import ArticleMainVisual from '../components/ArticleMainVisual';
 import Breadcrumb from '../components/Breadcrumb';
 import Lead from '../components/Lead';
 import Example from '../components/Example';
+import Flow from '../components/Flow';
 import { client } from "../../libs/client";
 
 // 関数コンポーネントのpropsを分割代入で指定
@@ -33,6 +34,10 @@ export default function articleId({ article }){
                         width={article.image.width}
                         height={article.image.height}
                     />
+                    <Flow 
+                        component={article.componentFlow}
+                    />
+                    
                 </div>
             </div>
         </>

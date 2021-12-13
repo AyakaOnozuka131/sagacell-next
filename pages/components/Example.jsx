@@ -4,7 +4,6 @@ import ProjectClassName from '../../styles/project/project.module.scss';
 
 export default function Example( props ) {
     const { heading, srcPath, alt, width, height } = props;
-    console.log(srcPath);
     return (
         <div className={ProjectClassName['p-component']}>
             <h3 className={ComponentClassName['c-heading-secondary']}>{ heading }</h3>
