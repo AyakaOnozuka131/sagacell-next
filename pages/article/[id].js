@@ -5,6 +5,8 @@ import Breadcrumb from '../components/Breadcrumb';
 import Lead from '../components/Lead';
 import Example from '../components/Example';
 import Flow from '../components/Flow';
+import RelatedArticle from '../components/RelatedArticle';
+import ShareButton from '../components/ShareButton';
 import { client } from "../../libs/client";
 
 // 関数コンポーネントのpropsを分割代入で指定
@@ -37,7 +39,8 @@ export default function articleId({ article }){
                     <Flow 
                         component={article.componentFlow}
                     />
-                    
+                    <RelatedArticle />
+                    <ShareButton />
                 </div>
             </div>
         </>
