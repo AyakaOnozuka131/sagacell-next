@@ -30,17 +30,22 @@ export default function articleId({ article }){
                         showFunction={ article.showFunction }
                     />
                     <Example 
-                        heading={article.heading}
-                        srcPath={article.image.url}
-                        alt={article.image.alt}
-                        width={article.image.width}
-                        height={article.image.height}
+                        heading={ article.heading }
+                        srcPath={ article.image.url }
+                        alt={ article.image.alt }
+                        width={ article.image.width }
+                        height={ article.image.height }
                     />
                     <Flow 
-                        component={article.componentFlow}
+                        component={ article.componentFlow }
                     />
-                    <RelatedArticle />
-                    <ShareButton />
+                    <RelatedArticle 
+                        book={ article.book }
+                    />
+                    <ShareButton 
+                        id={ article.id }
+                        title={ article.title }
+                    />
                 </div>
             </div>
         </>
