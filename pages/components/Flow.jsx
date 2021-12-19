@@ -1,11 +1,10 @@
-import Image from 'next/image';
-import ComponentClassName from '../../styles/component/component.module.scss';
+
 import ProjectClassName from '../../styles/project/project.module.scss';
 import FlowItem from '../components/FlowItem';
 
 export default function Flow( {component} ) {
     return (
-        <div>
+        <div className={ProjectClassName['p-component']}>
             { component.map( (item, index) => 
                 item.fieldId === 'flow' ? (
                     <FlowItem 
