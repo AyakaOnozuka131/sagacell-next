@@ -1,19 +1,19 @@
 import Link from 'next/link';
+import LayoutClassName from '../styles/layout/layout.module.scss';
+import Article from './components/Article';
 import { client } from '../libs/client';
 
 export default function Home ({ article }){
     return(
-        <>
-            <ul>
-                {article.map((article) => (
-                    <li key={article.id}>
-                        <Link href={`/article/${article.id}`}>
-                            <a>{article.title}</a>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </>
+        <div className={LayoutClassName['l-index']}>
+            <div className={LayoutClassName['l-content']}>
+                <div className={LayoutClassName['l-article']}>
+                <Article 
+                    article={article}
+                />
+                </div>
+            </div>
+        </div>
     );
 }
 
