@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import LayoutClassName from '../styles/layout/layout.module.scss';
 import Article from './components/Article';
+import Tab from './components/Tab';
 import { client } from '../libs/client';
 
 export default function Home ({ article }){
     return(
         <div className={LayoutClassName['l-index']}>
             <div className={LayoutClassName['l-content']}>
+                <Tab />
                 <div className={LayoutClassName['l-article']}>
                 <Article 
                     article={article}
